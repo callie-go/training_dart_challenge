@@ -20,7 +20,7 @@ void main() {
     playGame(randomList, userList);
     userList = [];
 
-    print("Play again? yes/no");
+    print("Bạn có muốn chơi lại không? yes/no");
     String inputPlayAgain = stdin.readLineSync()!;
     playAgain = inputPlayAgain == "yes";
   }
@@ -35,6 +35,9 @@ playGame(List<int> randomList, List<int> userList) {
         : (randomList.contains(userList[i]))
             ? bulls++
             : null;
+  }
+  if (bulls == 4) {
+    print("Bạn đã đoán đúng 4 số");
   }
   print("Cows: $cows");
   print("Bulls: $bulls");
