@@ -1,23 +1,23 @@
 createSquare(int squareSize) {
-  String ngang = " --- ";
-  String doc = "|    ";
-  String cNgang = "";
-  String cDoc = "";
-  String canh = "|";
+  String canhNgang = " --- ";
+  String canhDoc = "|    ";
+  String chieuNgang = "";
+  String chieuDoc = "";
+  String canhBia = "|";
   for (int i = 0; i < squareSize; i++) {
     for (int j = 0; j < squareSize; j++) {
-      cNgang += ngang;
-      cDoc += doc;
+      chieuNgang += canhNgang;
+      chieuDoc += canhDoc;
       if (j + 1 == squareSize) {
-        cDoc += canh;
+        chieuDoc += canhBia;
       }
     }
-    print(cNgang);
-    print(cDoc);
+    print(chieuNgang);
+    print(chieuDoc);
     if (i + 1 == squareSize) {
-      print(cNgang);
+      print(chieuNgang);
     }
-    cNgang = "";
-    cDoc = "";
+    chieuNgang = "";
+    chieuDoc = "";
   }
 }
