@@ -278,13 +278,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "unit_test_1",
+      "name": "exercise_1",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-07-24T08:00:24.094940Z",
+  "generated": "2023-07-24T07:26:56.160697Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }
